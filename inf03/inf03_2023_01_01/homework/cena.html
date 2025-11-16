@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>malarz</title>
+    <link rel="stylesheet" href="styl_1.css">
+</head>
+<body>
+<header>
+    <h1>Malowanie pokoi i biur</h1>
+</header>
+<main>
+    <section id="lewy">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="mieszamy.html">Mieszany</a></li>
+            <li><a href="cena.html">Wyceniamy</a></li>
+        </ul>
+    </section>
+    <section id="srodkowy">
+        <h2>Zapotrzebowanie na farbę</h2>
+        <form>
+            <label>
+                Powierzchnia malowania (m<sup>2</sup>):
+                <input type="number" id="powierzchnia">
+            </label>
+            <button type="button" onclick="policzFarba()">Policz</button>
+        </form>
+        <p id="wynik"></p>
+    </section>
+    <section id="prawy">
+        <img src="obraz.png" alt="Próbki farb">
+    </section>
+</main>
+<footer>
+    <h3>MALARZ</h3>
+    <p>Stronę opracował: olek1305</p>
+</footer>
+<script src="policzFarba.js"></script>
+</body>
+</html>
