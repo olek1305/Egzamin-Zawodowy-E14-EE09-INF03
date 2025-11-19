@@ -11,3 +11,4 @@ INNER JOIN zamowienia ON kwiaciarnie.id_kwiaciarni = zamowienia.id_kwiaciarni
 WHERE zamowienia.data = '2017-01-07';
 
 kw4
+CREATE TABLE klienci ( id INT PRIMARY KEY AUTO_INCREMENT NOT NULL, imie VARCHAR(15), nazwisko VARCHAR(15), rabat INT UNSIGNED);
