@@ -1,0 +1,11 @@
+kw1
+SELECT nazwa, cena FROM towary LIMIT 4;
+
+kw2
+SELECT cena FROM towary WHERE nazwa = 'Ekierka';
+
+kw3
+UPDATE dostawcy SET nazwa = "Artykuly szkolne" WHERE id = 2;
+
+kw4
+SELECT towary.promocja, COUNT(*) AS podsumowanie FROM towary GROUP BY promocja;

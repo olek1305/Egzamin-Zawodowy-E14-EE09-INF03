@@ -1,0 +1,51 @@
+* {
+    font-family: Georgia;
+    text-align: center;
+}
+
+main {
+    display: flex;
+}
+
+h4, h1 {
+    margin-top: 0;
+}
+
+header, footer {
+    background-color: #4ba3c7;
+    color: white;
+    height: 80px;
+    font-size: 120%;
+}
+
+#lewy, #prawy {
+    background-color: #EFEFEF;
+    height: 400px;
+    width: 25%;
+}
+
+#srodkowy {
+    background-color: #90caf9;
+    height: 400px;
+    width: 50%;
+}
+
+table {
+    margin-left: 10px;
+    width: 90%;
+    border: 1px solid #90CAF9;
+}
+
+td {
+    padding: 5px;
+    border: 1px solid #90CAF9;
+}
+
+td:hover {
+    color: #90CAF9;
+}
+
+input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
