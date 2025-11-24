@@ -24,7 +24,7 @@
                 </label>
                 <label>
                     symbol:
-                    <input type="number" name="symbol"><br>
+                    <input type="text" name="symbol"><br>
                 </label>
                 <button name="wyslij">AKCEPTUJ</button>
             </form>
