@@ -1,0 +1,57 @@
+body {
+    background: #E0F7FA;
+    font-family: Arial;
+    text-align: center;
+}
+
+#main {
+    display: flex;
+}
+
+#kontener {
+    width: 95%;
+    margin: auto;
+}
+
+#baner {
+    background: #00838F;
+    height: 200px;
+}
+
+#menu {
+    background-color: #006064;
+    padding: 15px;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 150%;
+    margin-left: 15px;
+}
+
+#lewy, #srodkowy, #prawy {
+    height: 350px;
+    width: 33%;
+    float: left;
+}
+
+#stopka {
+    background: #006064;
+    color: white;
+    text-align: right;
+    padding: 10px;
+}
+
+ul {
+    text-align: left;
+}
+
+button {
+    background: #00838F;
+    color: white;
+}
+
+button:hover {
+    color: #80DEEA;
+}
