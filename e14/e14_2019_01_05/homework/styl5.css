@@ -1,0 +1,50 @@
+body {
+    font-family: Verdana;
+    display: flex;
+    flex-direction: column;
+}
+
+header, main {
+    display: flex;
+}
+
+.miniatura {
+    background-color: Sienna;
+    height: 100px;
+    width: 20%;
+}
+
+.tytulowa {
+    background-color: Sienna;
+    color: orange;
+    height: 100px;
+    width: 80%;
+}
+
+.lewy {
+    background-color: BurlyWood;
+    height: 700px;
+    width: 70%;
+}
+
+.prawy {
+    background-color: BurlyWood;
+    height: 700px;
+    width: 30%;
+}
+
+footer {
+    background-color: Sienna;
+    color: orange;
+    text-align: center;
+}
+
+img {
+    margin: 7px;
+    padding: 5px;
+    border: 1px solid RosyBrown;
+}
+
+img:hover {
+    border-color: Maroon;
+}
