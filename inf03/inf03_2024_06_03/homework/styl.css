@@ -1,0 +1,74 @@
+* {
+    font-family: Georgia;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+}
+
+#bannerlewy, #bannerprawy {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    height: 100px;
+    width: 50%;
+}
+
+nav {
+    background-color: Navy;
+    padding: 20px;
+}
+
+#input {
+    color: silver;
+    margin: 50px;
+}
+
+#input:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+}
+
+#lewy, #prawy {
+    background-color: azure;
+    height: 550px;
+}
+
+#lewy {
+    width: 70%;
+}
+
+#prawy {
+    width: 30%;
+}
+
+footer {
+    background-color: navy;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+table {
+    border: 1px solid Navy;
+    margin: auto;
+    width: 70%;
+}
+
+tr:hover{
+    background-color: skyblue;
+}
+
+#rzeka {
+    width: 90%;
+}
