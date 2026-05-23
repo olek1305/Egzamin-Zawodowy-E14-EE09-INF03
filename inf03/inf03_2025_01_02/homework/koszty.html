@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Montaż paneli podłogowych</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="montaz_paneli.png" alt="firma usługowa">
+    </header>
+    <nav>
+        <a href="index.html">Strona Główna</a>
+        <a href="oferta.html">Oferta</a>
+        <a href="koszty.html">Kalkulator kosztów</a>
+    </nav>
+    <main>
+        <h1>Kalkulator kosztów montażu</h1>
+        <label>
+            Szerokość pomieszczenia [m]: <input type="number" id="szerokosc">
+        </label>
+        <label>
+            Dlugość pomieszczenia [m]: <input type="number" id="dlugosc">
+        </label>
+        <p>Typ panelu</p>
+        <label>
+            <input type="radio" name="typPanelu" id="laminowane"> Panele laminowane
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="typPanelu" id="winylowe"> Panele winylowe
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="typPanelu" id="deska"> Deska podłogowa
+        </label>
+        <br>
+        <button id="oblicz">Oblicz</button>
+        <br>
+        <p id="wynik"></p>
+    </main>
+    <footer><h5>Autor strony: olek1305</h5></footer>
+    <script>
+        function oblicz() {
+            let szerokosc = document.getElementById("szerokosc").value;
+            let dlugosc = document.getElementById("dlugosc").value;
+            let wynik = document.getElementById("wynik");
+
+            if (szerokosc != '' && dlugosc != '') {
+                let pole = szerokosc * dlugosc;
+                let kosztZaMetr = 0;
+
+                if (document.getElementById("laminowane").checked) {
+                    kosztZaMetr = 12;
+                }
+
+                if (document.getElementById("winylowe").checked) {
+                    kosztZaMetr = 14;
+                }
+
+                if (document.getElementById("deska").checked) {
+                    kosztZaMetr = 18;
+                }
+
+                let koszt = pole * kosztZaMetr;
+                wynik.innerHTML = "Pole powierzchni pomieszczenia: " + pole +", koszt montażu " + koszt;
+            } else {
+                wynik.innerHTML = "Wprowadź poprawne dane.";
+            }
+        }
+        document.getElementById("oblicz").onclick = oblicz;
+    </script>
+</body>
+</html>
