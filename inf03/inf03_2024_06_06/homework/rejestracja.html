@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+        <h1>Formularz rejestracyjny konferencji <em>Nasze Kwiaty</em></h1>
+    </header>
+    <main>
+        <section id="blok1">
+            <h2>Dane osobowe</h2>
+            <input type="text" placeholder="Wpisz imię..." id="imie" required>
+            <input type="text" placeholder="Wpisz nazwisko..." id="nazwisko" required>
+            <button id="przejdzDoBloku1" type="button">Następna karta</button>
+        </section>
+        <section id="blok2" class="ukryty">
+            <h2>Dane kontaktowe</h2>
+            <input type="email" id="email" placeholder="Twój e-mail...">
+            <input type="tel" id="number" placeholder="Twój numer telefonu...">
+            <button id="przejdzDoBloku2" type="button">Następna karta</button>
+        </section>
+        <section id="blok3" class="ukryty">
+            <h2>Hasło do logowania</h2>
+            <input type="password" id="haslo"  placeholder="Podaj hasło">
+            <input type="password" id="hasloPowtorz" placeholder="Powtórz hasło">
+            <button onclick="zatwierdz()" type="button">Zatwierdź</button>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <video src="motyl.mp4" controls>
+                Przeglądarka nie obsługuje tego formatu.
+            </video>
+        </section>
+        <section>
+            <h3>Plan konferencji</h3>
+            <table>
+                <tr>
+                    <td>9:00 - 12:00</td>
+                    <td>Pielęgnacja roślin</td>
+                </tr>
+                <tr>
+                    <td>13:00 - 15:00</td>
+                    <td>Targi kwiatowe</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <p><a href="https://kwiaty.pl/">Internetowa kwiaciarnia</a></p>
+        </section>
+        <section>
+            <p>Formularz wykonał: olek1305</p>
+        </section>
+    </footer>
+    <script>
+        let blok1 = document.getElementById("blok1");
+        let blok2 = document.getElementById("blok2");
+        let blok3 = document.getElementById("blok3");
+
+        let przycisk1 = document.getElementById("przejdzDoBloku1");
+        let przycisk2 = document.getElementById("przejdzDoBloku2");
+
+        przycisk1.onclick = function() {
+            blok1.style.visibility = "hidden";
+            blok2.style.visibility = "visible";
+        }
+
+        przycisk2.onclick = function() {
+            blok2.style.visibility = "hidden";
+            blok3.style.visibility = "visible";
+        }
+
+        function zatwierdz() {
+            let haslo = document.getElementById("haslo").value;
+            let hasloPowtorz = document.getElementById("hasloPowtorz").value;
+            let imie = document.getElementById("imie").value;
+            let nazwisko = document.getElementById("nazwisko").value;
+
+            if (haslo != hasloPowtorz) {
+                alert("Podane hasła różnią się");
+            }
+
+            console.log("Witaj " + imie + " "+ nazwisko); 
+        }
+    </script>
+</body>
+</html>
